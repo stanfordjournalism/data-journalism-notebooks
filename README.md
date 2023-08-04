@@ -1,11 +1,12 @@
 # Stanford ~ Data Journalism Notebooks
 
-A collection of Jupyter Notebooks based on tutorials from Programming in Journalism.
+A collection of Jupyter Notebooks, mainly based on tutorials from Programming in Journalism.
 
-Goal is to gradually port them to both standard Jupyter Notebooks and JupyterLite.
+Goal is to gradually port Markdown-based tutorials to both standard Jupyter Notebooks and JupyterLite.
 
-> JupyterLite notebooks are accessible via GitHub Pages: https://stanfordjournalism.github.io/data-journalism-notebooks
+JupyterLite notebooks are accessible via GitHub Pages: https://stanfordjournalism.github.io/data-journalism-notebooks
 
+> Pushes/merges to `main` trigger automatic rebuild of the GH Pages site.
 
 ## JupyterLite Reference
 
