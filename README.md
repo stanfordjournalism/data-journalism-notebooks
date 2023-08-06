@@ -17,8 +17,6 @@ JupyterLite notebooks are accessible via GitHub Pages:
 
 Below are the most important bits for day-to-day usage:
 
-- C
-
 - To add new Jupyter Notebooks to your JupyterLite page, add them to the `/content/` folder.
   - Note, you can run Jupyter Lab locally to test things before deploying (see __Working locally__ below).
 - To update pre-existing notebooks, start Jupyter Lab and open the relevant notebooks in the `content/` folder. Alternatively, you can edit Notebooks on the deployed JupyterLite instance on GitHub Pages, and then download the file and save it in the `content/` folder (effectively over-writing the pre-existing version).
