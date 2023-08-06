@@ -72,7 +72,7 @@ jupyter lab
 pipenv install requests
 
 # And don't forget! Also add requests to requirements.txt so it's
-available on our JupyterLite instance!
+# available on our JupyterLite instance!
 ```
 
 When you're ready to deploy, push your branch to GH, create a Pull
