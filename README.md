@@ -87,7 +87,6 @@ Important dirs in this repo
 ├── _output
 ├── content         # JupyterLite notebooks
 ├── markdown_source # Source Markdown files transferred from Programming in Journalism
-├── notebooks       # Vanilla Jupyter Notebook conversions from Markdown (ie non-JupyterLite)
 ├── repl            # JupyterLite configurations
 └── scripts         # misc scripts e.g. for conversion from markdown -> jupyter
 ```
