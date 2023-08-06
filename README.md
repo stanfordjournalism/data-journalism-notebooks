@@ -8,7 +8,25 @@ JupyterLite notebooks are accessible via GitHub Pages: https://stanfordjournalis
 
 > Pushes/merges to `main` trigger automatic rebuild of the GH Pages site.
 
-## JupyterLite Reference
+## JupyterLite Workflow and Reference
+
+> See [JupyterLite on GH Pages docs](https://jupyterlite.readthedocs.io/en/latest/quickstart/deploy.html)
+> for full details on how to update requirements and add new notebooks.
+
+Below are the most important bits for day-to-day usage:
+
+- Add new Jupyter Notebooks to the `/content/` folder
+- Update requirements.txt to add new libs to the JupyterLite
+
+**IMPORTANT**: To deploy changes:
+
+- Commit the changes to a branch
+- Push to GitHub
+- Create a pull request from `your-branch` -> `main`
+- Approve the PR. The act of merging to `main` should automatically
+  deploy your updates to GitHub Pages.
+
+### Reference
 
 - https://jupyterlite.readthedocs.io/en/latest/quickstart/deploy.html
 - How-to Guides: https://jupyterlite.readthedocs.io/en/latest/howto/index.html
