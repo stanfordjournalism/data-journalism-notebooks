@@ -34,6 +34,30 @@ Below are the most important bits for day-to-day usage:
 - How-to Guides: https://jupyterlite.readthedocs.io/en/latest/howto/index.html
 - Reference: https://jupyterlite.readthedocs.io/en/latest/reference/index.html
 
+## Working locally
+
+You can run Jupyter Lab locally to create new notebooks or update
+pre-existing notebooks. Just make sure you:
+
+- Always add/edit files in the `content/` directory, which is where
+  JupyterLite expects to find notebooks when it builds and deploys our JupyterLite instance on GitHub Pages
+- Don't forget to update both the `Pipfile` **and** `requirements.txt` to include any 3rd-party libraries required by your notebook. The `Pipfile` tracks dependences for local development of notebooks, while GitHub Actions uses `requirements.txt` to install dependencies into the GH Pages JupyterLite instance.
+
+
+To develop locally, clone this repo and use a standard `pipenv` workflow:
+
+```bash
+# Grab the repo
+git clone git@github.com:stanfordjournalism/data-journalism-notebooks.git
+cd data-journalism-notebooks/
+
+# If you just cloned, install libs
+pipenv install
+
+# Activate the environment and start Jupyter Lab
+pipenv shell
+jupyter lab
+```
 
 ## Project structure
 
