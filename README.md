@@ -4,9 +4,11 @@ A collection of Jupyter Notebooks, mainly based on tutorials from Programming in
 
 Goal is to gradually port Markdown-based tutorials to both standard Jupyter Notebooks and JupyterLite.
 
-JupyterLite notebooks are accessible via GitHub Pages: https://stanfordjournalism.github.io/data-journalism-notebooks
+JupyterLite notebooks are accessible via GitHub Pages:
 
-> Pushes/merges to `main` trigger automatic rebuild of the GH Pages site.
+> https://stanfordjournalism.github.io/data-journalism-notebooks
+
+
 
 ## JupyterLite Workflow and Reference
 
@@ -15,10 +17,12 @@ JupyterLite notebooks are accessible via GitHub Pages: https://stanfordjournalis
 
 Below are the most important bits for day-to-day usage:
 
+- C
+
 - To add new Jupyter Notebooks to your JupyterLite page, add them to the `/content/` folder.
-  - Note, you can run Jupyter Lab locally to test things before deploying.
+  - Note, you can run Jupyter Lab locally to test things before deploying (see __Working locally__ below).
 - To update pre-existing notebooks, start Jupyter Lab and open the relevant notebooks in the `content/` folder. Alternatively, you can edit Notebooks on the deployed JupyterLite instance on GitHub Pages, and then download the file and save it in the `content/` folder (effectively over-writing the pre-existing version).
-- Update `requirements.txt` to add new libs to the JupyterLite
+- Update the `Pipfile` and `requirements.txt` to add new libs to the JupyterLite instance on GitHub Pages.
 
 **IMPORTANT**: To deploy changes:
 
@@ -36,11 +40,15 @@ Below are the most important bits for day-to-day usage:
 
 ## Working locally
 
-You can run Jupyter Lab locally to create new notebooks or update
-pre-existing notebooks. Just make sure you:
+You can run Jupyter Lab locally to create new notebooks or update pre-existing notebooks.
 
-- Always add/edit files in the `content/` directory, which is where our JupyterLite on GitHub Pages expects to find notebooks
-- Don't forget to update both the `Pipfile` **and** `requirements.txt` to include any 3rd-party libraries required by your notebook. The `Pipfile` tracks dependences for local development of notebooks, while GitHub Actions uses `requirements.txt` to install dependencies into the GH Pages JupyterLite instance.
+> Any pushes or merges to to the `main` branch trigger automatic rebuild of the GH Pages JupyterLite site.
+
+Here's the general workflow:
+
+- Create a git branch locally
+- Add/edit files in the `content/` directory, which is where our JupyterLite on GitHub Pages expects to find notebooks
+- Update both the `Pipfile` **and** `requirements.txt` to include any 3rd-party libraries required by your notebook(s). The `Pipfile` tracks dependencies for local development of notebooks, while GitHub Actions uses `requirements.txt` to install dependencies into our JupyterLite instance hosted on GH Pages.
 
 
 To develop locally, clone this repo and use a standard `pipenv` workflow:
@@ -53,17 +61,25 @@ cd data-journalism-notebooks/
 # If you just cloned, install libs
 pipenv install
 
+# Create a new branch
+git switch -c my-branch
+
 # Activate the environment and start Jupyter Lab
 pipenv shell
 jupyter lab
 
-# If you need to add new requirements, e.g. requests
+# Add/edit notebooks in the content/ directory.
 
+# If you need to add new requirements, e.g. requests
 pipenv install requests
 
 # And don't forget! Also add requests to requirements.txt so it's
 available on our JupyterLite instance!
 ```
+
+When you're ready to deploy, push your branch to GH, create a Pull
+Request, and merge to `main` to trigger the deployment.
+
 
 ## Project structure
 
