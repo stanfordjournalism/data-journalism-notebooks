@@ -39,8 +39,7 @@ Below are the most important bits for day-to-day usage:
 You can run Jupyter Lab locally to create new notebooks or update
 pre-existing notebooks. Just make sure you:
 
-- Always add/edit files in the `content/` directory, which is where
-  JupyterLite expects to find notebooks when it builds and deploys our JupyterLite instance on GitHub Pages
+- Always add/edit files in the `content/` directory, which is where our JupyterLite on GitHub Pages expects to find notebooks
 - Don't forget to update both the `Pipfile` **and** `requirements.txt` to include any 3rd-party libraries required by your notebook. The `Pipfile` tracks dependences for local development of notebooks, while GitHub Actions uses `requirements.txt` to install dependencies into the GH Pages JupyterLite instance.
 
 
@@ -57,6 +56,13 @@ pipenv install
 # Activate the environment and start Jupyter Lab
 pipenv shell
 jupyter lab
+
+# If you need to add new requirements, e.g. requests
+
+pipenv install requests
+
+# And don't forget! Also add requests to requirements.txt so it's
+available on our JupyterLite instance!
 ```
 
 ## Project structure
