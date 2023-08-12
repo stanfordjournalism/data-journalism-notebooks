@@ -1,3 +1,5 @@
+.envrc
+scratch/*
 *.bundle.*
 lib/
 node_modules/
