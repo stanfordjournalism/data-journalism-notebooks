@@ -19,3 +19,5 @@ class Bird:
         # Set the new name on the *instance* using "self"
         self.name = new_name
         print(f'My name is now {self.name}')
+        # Important! We're returning the name (aka a string data type)
+        return self.name
