@@ -1,0 +1,9 @@
+beautifulsoup4
+ipykernel
+ipywidgets
+requests
+numpy
+pandas
+altair
+jupyterlab
+tqdm
