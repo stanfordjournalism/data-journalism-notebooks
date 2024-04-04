@@ -17,8 +17,8 @@ If you're an old hand at Python and Jupyter, clone away!
 Here's an overview of each option to help you decide on the right fit:
 
 - **Beginners**: [Zero-install browser mode](https://stanfordjournalism.github.io/data-journalism-notebooks) - Runs on [JupyterLite](https://jupyterlite.readthedocs.io/en/stable/). Tutorials that work with remote files (e.g. using the `requests` library) will not work, and your mileage may vary depending on OS and browser (Safari is *not* recommended; Chrome and Firefox tend to work best)
-- **Beginner-to-Intermediate**: [GitHub Codespaces](https://github.com/features/codespaces) - Run the code in a cloud "container" supplied by GitHub. Also very little install required and all notebooks (including those on APIs/weblscraping) should work using a "traditional" Notebook workflow.
-- **Intermediate**: Clone this repo to your local machine and run the notebooks using your favored workflow.
+- **Beginner-to-Intermediate**: [GitHub Codespaces](https://github.com/features/codespaces) - Run the code in a cloud "container" supplied by GitHub. Also very little install required and all notebooks (including those on APIs/web scraping) should work using a "traditional" Notebook workflow.
+- **Intermediate**: Clone this repo to a local machine and run the notebooks using your favored workflow.
 
 See below for an overview of JupyterLite and Codespaces.
 
