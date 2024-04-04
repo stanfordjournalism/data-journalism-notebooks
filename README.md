@@ -4,15 +4,23 @@ A collection of Jupyter Notebooks used in the Stanford Graduate Journalism Progr
 
 > Project administrators should check out [these docs](docs/admin_jupyterlite.md) for details on managing the Jupyter Lite install on GH Pages
 
-## Usage
+## Same Notebooks, Multiple Environments
+
+We strive to make it as easy as possible to work with these Notebooks by providing them in multiple environments. 
+
+If you're brand new to coding, you may want to try the "zero-install" for **Beginners** (see below). 
+
+If you have past experience with Jupyter Notebooks but are wary of setting up Python and installing libraries such as `pandas` on your own machine, then the **Beginner-to-Intermediate** option using Codespaces is a good next step.
+
+If you're an old hand at Python and Jupyter, clone away!
 
 There are three ways to access the notebooks:
 
-- [Zero-install browser mode](https://stanfordjournalism.github.io/data-journalism-notebooks) - Runs on [JupyterLite](https://jupyterlite.readthedocs.io/en/stable/). Tutorials that work with remote files (e.g. using the `requests` library) will not work, and your mileage may vary depending on OS and browser (Safari is *not* recommended; Chrome and Firefox tend to work best)
-- [GitHub Codespaces](https://github.com/features/codespaces) - Run the code in a cloud "container" supplied by GitHub. Also very little install required and all notebooks should work using a "traditional" Notebook workflow.
-- Clone this repo to your local machine and run the notebooks using your favored workflow.
+- **Beginners**: [Zero-install browser mode](https://stanfordjournalism.github.io/data-journalism-notebooks) - Runs on [JupyterLite](https://jupyterlite.readthedocs.io/en/stable/). Tutorials that work with remote files (e.g. using the `requests` library) will not work, and your mileage may vary depending on OS and browser (Safari is *not* recommended; Chrome and Firefox tend to work best)
+- **Beginner-to-Intermediate**: [GitHub Codespaces](https://github.com/features/codespaces) - Run the code in a cloud "container" supplied by GitHub. Also very little install required and all notebooks (including those on APIs/weblscraping) should work using a "traditional" Notebook workflow.
+- **Intermediate**: Clone this repo to your local machine and run the notebooks using your favored workflow.
 
-See below for an overview of JupyterLite and Codespaces, their pros and cons, and how to work with the notebooks in either environment.
+See below for an overview of JupyterLite and Codespaces.
 
 ## Running Notebooks in the Cloud
 
