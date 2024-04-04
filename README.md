@@ -8,9 +8,9 @@ A collection of Jupyter Notebooks used in the Stanford Graduate Journalism Progr
 
 We strive to make it as easy as possible to work with these Notebooks by providing them in multiple environments. 
 
-If you're brand new to coding, you may want to try the "zero-install" for **Beginners** (see below). 
+If you're brand new to coding, you may want to start with the "zero-install" environment for **Beginners** (see below). 
 
-If you have past experience with Jupyter Notebooks but are wary of setting up Python and installing libraries such as `pandas` on your own machine, then the **Beginner-to-Intermediate** option using Codespaces is a good next step.
+If you have prior experience with Jupyter Notebooks but are wary of setting up Python and installing libraries such as `pandas` on your own machine, then the **Beginner-to-Intermediate** option using Codespaces is a good next step.
 
 If you're an old hand at Python and Jupyter, clone away!
 
