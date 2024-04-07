@@ -13,3 +13,4 @@ ipyleaflet
 pandas
 altair
 bs4
+playwright
