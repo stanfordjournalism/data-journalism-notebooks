@@ -9,6 +9,7 @@ typing-extensions = "*"
 emoji = "*"
 pandas = "*"
 altair = "*"
+playwright = "*"
 
 [dev-packages]
 
