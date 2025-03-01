@@ -1,0 +1,33 @@
+[project]
+name = "data-journalism-notebooks"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "altair>=5.5.0",
+    "bs4>=0.0.2",
+    "ipyleaflet>=0.19.2",
+    "ipywidgets>=8.1.1,<9",
+    "jupyterlab~=4.0.11",
+    "jupyterlite-core==0.2.3",
+    "jupyterlite-pyodide-kernel==0.2.3",
+    "notebook~=7.0.7",
+    "pandas>=2.2.3",
+    "playwright>=1.50.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "altair>=5.5.0",
+    "beautifulsoup4>=4.13.3",
+    "ipykernel>=6.29.5",
+    "ipywidgets>=8.1.5",
+    "jupyterlab>=4.0.13",
+    "jupyterlite[all]>=0.2.3",
+    "jupytext>=1.16.7",
+    "numpy>=2.2.3",
+    "pandas>=2.2.3",
+    "requests>=2.32.3",
+    "tqdm>=4.67.1",
+]
