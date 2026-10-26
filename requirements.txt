@@ -1,13 +1,13 @@
 # Core modules (required)
-jupyterlite-core==0.2.3
-jupyterlab~=4.0.11
-notebook~=7.0.7
+jupyterlite-core==0.8.6
+jupyterlab~=4.6.0
+notebook~=7.6.0
 
 # Python kernel (optional)
-jupyterlite-pyodide-kernel==0.2.3
+jupyterlite-pyodide-kernel==0.8.6
 
 # Python: ipywidget library for Jupyter notebooks (optional)
-ipywidgets>=8.1.1,<9
+ipywidgets>=8.1.8,<9
 
 ipyleaflet
 pandas
